@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+:root {
+    --text-color: #204754;
+	--font-family: 'Nunito', sans-serif;
+	--grad1: #5961F9;
+	--grad2: #2AFADF;
+	--grad3: #F9FEA5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grad2);
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    
+}
+
+.show-project{
+    font-size: 35px;
+    text-align: left;
+    text-decoration: underline;
+}
+.show-title, .show-description, .show-date {
+    font-size: 25px;
+}
+
+.edit-button, .all-articles-button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    box-shadow: 4px 4px 0 0 #000;
+    margin-left: 2rem;
+    transition: ease-out 0.15s;
+
+}
+
+.edit-button {
+    background-color: #6f6df0;
+    color: white;
+    margin-right: 1rem;
+}
+.all-articles-button:hover, .all-articles-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 #000;
+    transform: translate(4px, 4px);
+}
+.edit-button:hover, .edit:focus {
+    outline: 0;
+    box-shadow: 0 0 0 #000;
+    transform: translate(4px, 4px);
+}
