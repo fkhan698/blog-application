@@ -37,12 +37,13 @@ body {
 }
 
 .input-field {
-    
+    margin-right: 1rem;
     padding-right: 7rem;
     margin-left: 2rem;
     font-size: 1.5rem;
     font-family: var(--font-family);
 }
+
 .text-area{
     font-size: 1.5rem;
     font-family: var(--font-family);
@@ -52,7 +53,7 @@ body {
     margin-top: 4rem;
 }
 
-.cancel-button, .save-button {
+.cancel-button, .save-button, .login-button, .register-button {
     font: inherit;
     background: none;
     cursor: pointer;
@@ -76,6 +77,22 @@ body {
 }
 .save-button:hover, 
 .save-button:focus {
+    outline: 0; 
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 #000;
+    background-color: #6cf5a5;
+}
+
+.login-button:hover, 
+.login-button:focus {
+    outline: 0; 
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 #000;
+    background-color: #6cf5a5;
+}
+
+.register-button:hover, 
+.register-button:focus {
     outline: 0; 
     transform: translate(4px, 4px);
     box-shadow: 0 0 0 #000;

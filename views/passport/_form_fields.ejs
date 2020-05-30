@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <link rel="stylesheet" href="/public/stylesheets/form.css">
+    
 </head>
 <body>
-    <div>
+<div class="container">
+    <title class="form-title">Register</title>
+     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <input class="input-field" type="text" id="name" name="name" required>
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input class="input-field" type="email" id="email" name="email" required>
     </div>
-    <div>
+    <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input class="input-field" type="password" id="password" name="password" required>
     </div>
-    <button type="submit">Register</button>
+    <button class="register-button" type="submit">Register</button>
+</div>
+   
 </body>
 </html>

@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/stylesheets/form.css">
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <a href="/">Home Page</a>
-    <% if (messages.error) { %>
-        <%= messages.error %>
-   <% } %>
-<form action="/login" method="POST">
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <div class="container">
+            <h1 class="form-title">Login</h1>
+        <a href="./register">Register</a>
+        <% if (messages.error) { %>
+            <%= messages.error %>
+    <% } %>
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="input-field" type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="input-field" type="password" id="password" name="password" required>
+        </div>
+        <button class= "login-button" type="submit">Login</button>
+    </form>
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Login</button>
-</form>
+   

@@ -11,6 +11,9 @@
     <h1 class="home-page"> Blog Posts <h1>
         <div class="new-articles">
                 <button class="new-article-button" onclick="window.location.href='/articles/new'">New Article</button>
+                <form action="/logout?_method=DELETE" method="POST">
+                <button class="logout-button" type="submit">Log Out</button>
+                </form>
         </div>
         <div class="container">
             <div class="articles">

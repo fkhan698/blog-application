@@ -45,14 +45,22 @@ app.use(methodOverride('_method'));
 
 
 
-app.get('/', async(req, res) => {
+app.get('/', checkAuthenticated, async(req, res) => {
    const articles = await Article.find().sort({createdAt: 'desc'});
    res.render('articles/index', {articles:articles})
 })
+
+function checkAuthenticated(req, res, next){
+  if(req.isAuthenticated()){
+      return next()
+  }
+  res.redirect('login')
+}
 
 
 app.use('/articles', articleRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/logout', logoutRouter);
+
 app.listen(process.env.PORT || 3000)

@@ -55,8 +55,11 @@ p {
 }
 .new-articles{
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
-.new-article-button, .read-more-button, .edit-button, .delete-button{
+.new-article-button, .read-more-button, .edit-button, .delete-button, .logout-button{
     font: inherit;
     background: none;
     cursor: pointer;
@@ -138,6 +141,18 @@ p {
 }
 .delete-button:hover, 
 .delete-button:focus {
+    outline: 0;
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 #000;
+    background-color: #ff4b5b;
+}
+.logout-button {
+    background-color: red;
+    color: white;
+    font-size: 21px;
+}
+.logout-button:hover, 
+.logout-button:focus {
     outline: 0;
     transform: translate(4px, 4px);
     box-shadow: 0 0 0 #000;
