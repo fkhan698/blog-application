@@ -33,7 +33,7 @@ app.use('/public', express.static(path.join(__dirname, "public")));
 //Session and Flash 
 app.use(flash())
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'secret',
     resave: false,
     saveUninitialized: false
 }))
